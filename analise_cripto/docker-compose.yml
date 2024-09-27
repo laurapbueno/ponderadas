@@ -5,10 +5,10 @@ services:
     image: mysql:5.7
     container_name: mysql_db
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: arual
       MYSQL_DATABASE: crypto_db
       MYSQL_USER: root
-      MYSQL_PASSWORD: example
+      MYSQL_PASSWORD: arual
     ports:
       - "3306:3306"
     volumes:

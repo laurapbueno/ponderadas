@@ -33,3 +33,39 @@ O projeto será desenvolvido utilizando as seguintes tecnologias e ferramentas:
     PostgreSQL: Para armazenamento dos dados.
     Docker: Para containerização do ambiente de desenvolvimento e do banco de dados.
     Dash/Plotly: Para criação de um dashboard interativo que exibirá os resultados dos modelos.
+
+# Estrutura de Pastas
+
+---------------------
+    analyse_cripto/
+    ├── .ipynb_checkpoints/     # Checkpoints automáticos salvos pelo Jupyter Notebook 
+    │   └── 02-feature-selection-checkpoint.ipynb 
+    ├── api/                             # Diretório com arquivos relacionados à API.
+    │   ├── api_server.py                
+    │   ├── app.py                       
+    │   └── Dockerfile                   
+    ├── assets/images/                   # Diretório de imagens usadas no projeto
+    │   ├── bitcoin.png        
+    │   ├── closedPrice.png              
+    │   ├── eos.png                      
+    │   ├── matriz.png                   
+    │   ├── price.png                    
+    │   └── solana.png                   
+    ├── data/raw/                        # Diretório para dados brutos de criptomoedas.
+    │   ├── coin_Bitcoin.csv             
+    │   ├── coin_EOS.csv                 
+    │   └── coin_Solana.csv              
+    ├── docs/                            # Diretório de documentação do projeto.
+    │   ├── docker.md                    # Documentação sobre o uso do Docker.
+    │   └── docs.md                      # Documentação geral do projeto.
+    │   └── comousar.md                  # Dopcumentação de como rodar a aplicação
+    ├── models/                          # Diretório para os modelos de machine learning treinados e scripts relacionados.
+    │   ├── model_selection.py           
+    │   ├── random_forest_model.pkl      
+    │   └── trained-models.pkl           
+    ├── notebook/                        # Diretório com notebooks Jupyter
+    │   ├── 01-data-exploration.ipynb    
+    │   ├── 02-feature-selection.ipynb   
+    │   └── 03-dashboard.ipynb           
+    ├── .gitignore                       
+    └── docker-compose.yml               # Arquivo de configuração do Docker Compose para orquestrar os contêineres da aplicação.
