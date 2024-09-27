@@ -1,0 +1,11 @@
+flask
+joblib
+pandas
+sqlalchemy
+pymysql
+scikit-learn
+dash
+dash-bootstrap-components
+plotly
+requests
+
